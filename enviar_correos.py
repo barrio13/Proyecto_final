@@ -8,6 +8,7 @@ data = pd.read_csv('C:\\Users\\guill\\OneDrive\\Desktop\\main\\googleform.csv')
 df_filtrado = data[data.iloc[:, 4].str.contains('NVDA', na=False)]
 
 data_modelo = pd.read_csv('C:\\Users\\guill\\OneDrive\\Desktop\\main\\resultado_prediccion.csv')
+data_modelo = data_modelo[data_modelo['Empresa'].str.contains('NVDA', na=False)]
 tendencia = data_modelo['Tendencia'].tolist()
 
 lista_emails = df_filtrado['Email'].tolist()
