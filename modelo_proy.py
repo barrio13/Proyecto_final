@@ -85,8 +85,8 @@ early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights
 model1.fit(X_train, y_train, epochs=80, validation_data=(X_validation, y_validation), callbacks=[reduce_lr, early_stop])
 
 # Guarda el modelo en un archivo
-model1.save('C:\\Users\\guill\\OneDrive\\Desktop\\main\\model_nvda')
+# model1.save('C:\\Users\\guill\\OneDrive\\Desktop\\main\\model_nvda')
 
-# Cargar el modelo
-loaded_model = load_model('C:\\Users\\guill\\OneDrive\\Desktop\\main\\model_nvda')
-print("Modelo cargado exitosamente.")
+# # Cargar el modelo
+# loaded_model = load_model('C:\\Users\\guill\\OneDrive\\Desktop\\main\\model_nvda')
+# print("Modelo cargado exitosamente.")
